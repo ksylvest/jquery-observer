@@ -1,4 +1,4 @@
-PROJECT = "jquery.observer"
+PROJECT = "jquery.observe"
 
 {spawn, exec} = require "child_process"
 
