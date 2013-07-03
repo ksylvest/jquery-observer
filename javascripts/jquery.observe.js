@@ -7,16 +7,16 @@ Copyright 2013 Kevin Sylvestre
 
 (function() {
   "use strict";
-  var $, observe;
+  var $, Observer;
 
   $ = jQuery;
 
-  observe = (function() {
-    observe.settings = {
+  Observer = (function() {
+    Observer.settings = {
       interval: 800
     };
 
-    function observe(form, callback, settings) {
+    function Observer(form, callback, settings) {
       if (settings == null) {
         settings = {};
       }
@@ -26,7 +26,7 @@ Copyright 2013 Kevin Sylvestre
       this.observe();
     }
 
-    observe.prototype.observe = function() {
+    Observer.prototype.observe = function() {
       var _this = this;
       $(this.form.elements).change(function() {
         return _this.modified = new Date();
@@ -42,11 +42,11 @@ Copyright 2013 Kevin Sylvestre
       });
     };
 
-    observe.prototype.every = function(interval, callback) {
+    Observer.prototype.every = function(interval, callback) {
       return setInterval(callback, interval);
     };
 
-    return observe;
+    return Observer;
 
   })();
 
@@ -56,7 +56,7 @@ Copyright 2013 Kevin Sylvestre
         options = {};
       }
       return this.each(function() {
-        return new observe(this, callback, options);
+        return new Observer(this, callback, options);
       });
     }
   });

@@ -7,7 +7,7 @@ Copyright 2013 Kevin Sylvestre
 
 $ = jQuery
 
-class observe
+class Observer
   
   @settings:
     interval: 800
@@ -33,4 +33,4 @@ class observe
 
 $.fn.extend
   observer: (callback, options = {}) ->
-    @each -> new observe(this, callback, options)
+    @each -> new Observer(this, callback, options)
