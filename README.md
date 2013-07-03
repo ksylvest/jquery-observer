@@ -1,14 +1,13 @@
-# jQuery Observer
+# jQuery Observe
 
-Observer is a jQuery plugin designed to provide change observation.
+Observe is a jQuery plugin designed to provide callbacks on changes in forms.
 
 ## Installation
 
-To install copy the *images*, *javascripts*, and *stylesheets* directories into your project and add the following snippet to the header:
+To install copy the*javascripts* directory into your project and add the following snippet to the header:
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="javascript/jquery.observer.js" type="text/javascript"></script>
+    <script src="javascript/jquery.observe.js" type="text/javascript"></script>
   
 ## Examples
 
