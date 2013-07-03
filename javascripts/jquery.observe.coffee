@@ -32,5 +32,5 @@ class Observer
     setInterval callback, interval
 
 $.fn.extend
-  observer: (callback, options = {}) ->
+  observe: (callback, options = {}) ->
     @each -> new Observer(this, callback, options)

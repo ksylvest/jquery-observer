@@ -51,7 +51,7 @@ Copyright 2013 Kevin Sylvestre
   })();
 
   $.fn.extend({
-    observer: function(callback, options) {
+    observe: function(callback, options) {
       if (options == null) {
         options = {};
       }

@@ -11,7 +11,7 @@ To install copy the*javascripts* directory into your project and add the followi
   
 ## Examples
 
-Setting up an observer is easy. The following snippet is a good start:
+Setting up observe is easy. The following snippet is a good start:
     
     <form id="search">
       <input type="text" name="search" />
