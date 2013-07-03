@@ -15,7 +15,7 @@ class Observer
   constructor: (form, callback, settings = {}) ->
     @form = form
     @callback = callback
-    @settings = $.extend {}, observe.settings, settings
+    @settings = $.extend {}, Observer.settings, settings
     @observe()
 
   observe: ->

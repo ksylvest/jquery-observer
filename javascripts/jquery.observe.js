@@ -22,7 +22,7 @@ Copyright 2013 Kevin Sylvestre
       }
       this.form = form;
       this.callback = callback;
-      this.settings = $.extend({}, observe.settings, settings);
+      this.settings = $.extend({}, Observer.settings, settings);
       this.observe();
     }
 
