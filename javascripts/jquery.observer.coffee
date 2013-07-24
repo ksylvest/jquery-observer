@@ -1,7 +1,7 @@
 ###
 jQuery observe
 Copyright 2013 Kevin Sylvestre
-1.0.3
+1.0.4
 ###
 
 "use strict"
