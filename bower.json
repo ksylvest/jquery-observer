@@ -1,7 +1,7 @@
 {
-  "name": "observe",
+  "name": "observer",
   "version": "1.0.3",
-  "main": [ "./javascripts/jquery.observe.js" ],
+  "main": [ "./javascripts/jquery-observer.js" ],
   "ignore": 
   [
     "**/*.sass",

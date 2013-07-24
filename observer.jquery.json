@@ -1,5 +1,5 @@
 {
-  "name": "observe",
+  "name": "observer",
   "title": "jQuery Observe",
   "description": "Observe is a jQuery plugin designed to provide callbacks on changes in forms.",
   "keywords": ["callback","form","observer"],
@@ -13,13 +13,13 @@
   [
     {
       "type": "MIT",
-      "url": "https://github.com/ksylvest/jquery-observe/LICENSE"
+      "url": "https://github.com/ksylvest/jquery-observer/LICENSE"
     }
   ],
-  "bugs": "https://github.com/ksylvest/jquery-observe/issues",
-  "docs": "https://ksylvest.github.com/jquery-observe",
-  "homepobserve": "https://ksylvest.github.com/jquery-observe",
-  "download": "https://ksylvest.github.com/jquery-observe",
+  "bugs": "https://github.com/ksylvest/jquery-observer/issues",
+  "docs": "https://ksylvest.github.com/jquery-observer",
+  "homepobserve": "https://ksylvest.github.com/jquery-observer",
+  "download": "https://ksylvest.github.com/jquery-observer",
   "dependencies": 
   {
     "jquery": ">1.5"
