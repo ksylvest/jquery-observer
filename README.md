@@ -8,7 +8,12 @@ To install copy the*javascripts* directory into your project and add the followi
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
     <script src="javascript/jquery.observe.js" type="text/javascript"></script>
-  
+
+    This plugin is also registered under http://bower.io/ to simplify integration. Try:
+
+        npm install -g bower
+        bower install observe
+
 ## Examples
 
 Setting up an observer is easy. The following snippet is a good start:

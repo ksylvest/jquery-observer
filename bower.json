@@ -1,0 +1,21 @@
+{
+  "name": "observe",
+  "version": "1.0.3",
+  "main": [ "./javascripts/jquery.observe.js" ],
+  "ignore": 
+  [
+    "**/*.sass",
+    "**/*.coffee",
+    "**/sample.*",
+    "**/rainbow.*",
+    "bourbon",
+    "neat",
+    "packages",
+    "images",
+    "Cakefile",
+    "Gemfile",
+    "Gemfile.*",
+    "index.*"
+  ],
+  "dependencies": { "jquery": "latest" }
+}
