@@ -1,6 +1,6 @@
-# jQuery Observe
+# jQuery Observer
 
-Observe is a jQuery plugin designed to provide callbacks on changes in forms.
+Observer is a jQuery plugin designed to provide callbacks on changes in forms.
 
 ## Installation
 
@@ -25,6 +25,10 @@ Setting up an observer is easy. The following snippet is a good start:
     <script type="text/javascript">
       $('#search').observe(function () { alert("observer"); });
     </script>
+
+## Status
+
+[![Status](https://travis-ci.org/ksylvest/jquery-observer.png)](https://travis-ci.org/ksylvest/jquery-observer)
 
 ## Copyright
 
