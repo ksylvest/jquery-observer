@@ -3,7 +3,7 @@
   "title": "jQuery Observer",
   "description": "Observer is a jQuery plugin designed to provide callbacks on changes in forms.",
   "keywords": ["callback","form","observer"],
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": {
     "name": "Kevin Sylvestre",
     "email": "kevin@ksylvest.com",
