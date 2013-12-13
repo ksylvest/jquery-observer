@@ -12,7 +12,7 @@ To install copy the*javascripts* directory into your project and add the followi
     This plugin is also registered under http://bower.io/ to simplify integration. Try:
 
         npm install -g bower
-        bower install observe
+        bower install observer
 
 ## Examples
 
