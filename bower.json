@@ -1,6 +1,6 @@
 {
   "name": "observer",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": [ "./javascripts/jquery.observer.js" ],
   "ignore": 
   [
