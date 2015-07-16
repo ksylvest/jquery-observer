@@ -29,10 +29,7 @@ Copyright 2014 Kevin Sylvestre
 
     Observer.prototype.observe = function() {
       var _this = this;
-      $(this.form.elements).change(function() {
-        return _this.modified = new Date();
-      });
-      $(this.form.elements).keypress(function() {
+      $(this.form.elements).on('change keypress', function () {
         return _this.modified = new Date();
       });
       return this.every(this.settings.interval, function() {
