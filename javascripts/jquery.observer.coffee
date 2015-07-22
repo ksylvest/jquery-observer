@@ -1,7 +1,7 @@
 ###
 jQuery observe
 Copyright 2014 Kevin Sylvestre
-1.0.9
+1.1.0
 ###
 
 "use strict"
@@ -20,9 +20,8 @@ class Observer
     @observe()
 
   observe: ->
-    _this = this
-    $(@form.elements).on 'change keypress', ->
-      _this.modified = new Date()
+    $(@form.elements).on 'change keypress', => 
+      @modified = new Date()
 
     @every @settings.interval, =>
       @callback.call(@form) if @modified?
