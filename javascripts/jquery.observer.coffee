@@ -20,10 +20,9 @@ class Observer
     @observe()
 
   observe: ->
-    $(@form.elements).change =>
-      @modified = new Date()
-    $(@form.elements).keypress =>
-      @modified = new Date()
+    _this = this
+    $(@form.elements).on 'change keypress', ->
+      _this.modified = new Date()
 
     @every @settings.interval, =>
       @callback.call(@form) if @modified?
