@@ -4,32 +4,43 @@ Copyright 2014 Kevin Sylvestre
 1.1.0
 ###
 
-"use strict"
+(($) ->
+  'use strict'
+  Observer = undefined
+  Observer = do ->
+    `var Observer`
 
-$ = jQuery
+    Observer = (form, callback, settings) ->
+      if settings == null
+        settings = {}
+      @form = form
+      @callback = callback
+      @settings = $.extend({}, Observer.settings, settings)
+      @observe()
+      return
 
-class Observer
-  
-  @settings:
-    interval: 800
+    Observer.settings = interval: 800
 
-  constructor: (form, callback, settings = {}) ->
-    @form = form
-    @callback = callback
-    @settings = $.extend {}, Observer.settings, settings
-    @observe()
+    Observer::observe = ->
+      $(@form.elements).on 'change keypress', ((_this) ->
+        ->
+          _this.modified = new Date
+      )(this)
+      @every @settings.interval, ((_this) ->
+        ->
+          if _this.modified != null
+            _this.callback.call _this.form
+          delete _this.modified
+      )(this)
 
-  observe: ->
-    $(@form.elements).on 'change keypress', => 
-      @modified = new Date()
+    Observer::every = (interval, callback) ->
+      setInterval callback, interval
 
-    @every @settings.interval, =>
-      @callback.call(@form) if @modified?
-      delete @modified
-
-  every: (interval, callback) ->
-    setInterval callback, interval
-
-$.fn.extend
-  observe: (callback, options = {}) ->
-    @each -> new Observer(this, callback, options)
+    Observer
+  $.fn.extend observe: (callback, options) ->
+    if options == null
+      options = {}
+    @each ->
+      new Observer(this, callback, options)
+  return
+) jQuery

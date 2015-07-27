@@ -6,11 +6,10 @@ Copyright 2014 Kevin Sylvestre
 1.1.0
  */
 
-(function() {
+(function($) {
   "use strict";
-  var $, Observer;
+  var Observer;
 
-  $ = jQuery;
 
   Observer = (function() {
     Observer.settings = {
@@ -62,4 +61,4 @@ Copyright 2014 Kevin Sylvestre
     }
   });
 
-}).call(this);
+}(jQuery));
